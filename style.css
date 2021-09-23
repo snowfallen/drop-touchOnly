@@ -1,0 +1,49 @@
+body {
+		margin: 0 auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+}
+
+.wrapper {
+		width: 360px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		position: relative;
+		top: 0;
+		left: 0;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		text-align: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+}
+.wrapper .empty {
+		margin: 5px;
+		width: 100px;
+		height: 100px;
+		background-color: #200505;
+}
+.wrapper .empty .kube {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background-color: #f3c1c1;
+}
+.wrapper .empty.active {
+		background-color: #d32a2a;
+}
+
+@media (max-width: 375px) {
+		.wrapper:nth-child(8) {
+				display: none;
+		}
+}

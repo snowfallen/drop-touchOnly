@@ -1,0 +1,36 @@
+body{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    .empty{
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(32, 5, 5);
+        .kube{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(243, 193, 193);
+        }
+    &.active{
+        background-color: rgb(211, 42, 42);
+    }
+    }
+}
+@media (max-width:375px){
+    .wrapper:nth-child(8){
+        display: none;
+    }
+}
