@@ -13,7 +13,7 @@ function processTouchmove (event){
     let touch = event.targetTouches[0];
     console.log(touch.pageX);
     console.log(touch.pageY);
-    kube.style.left = `${touch.pageX - 100}px`;
+    kube.style.left = `${touch.pageX - 150}px`;
     kube.style.top = `${touch.pageY - 50}px`;
     empty.map(item => {
         if (
